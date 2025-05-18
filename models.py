@@ -15,6 +15,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 MODEL_PATH = os.getenv("MODEL_PATH", Path(__file__).parent)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+
+#use this to directly access the finetuned classification model from huggingface
+#model = AutoModelForSequenceClassification.from_pretrained("milanchndr/email-classification-model")
+#tokenizer = AutoTokenizer.from_pretrained("milanchndr/email-classification-model")
+
 model.eval()
 
 label_map = {0: "Incident", 1: "Request", 2: "Change", 3: "Problem"}
