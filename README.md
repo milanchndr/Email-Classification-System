@@ -64,7 +64,7 @@ The system is exposed via a Flask API.
 1.  **Prerequisites**:
     *   Git
     *   Git LFS (Large File Storage): Install Git LFS from [here](https://git-lfs.com).
-    *   Python 3.11+
+    *   Python 3.10+
     *   A virtual environment (recommended).
 
 2.  **Clone the Repository**:
